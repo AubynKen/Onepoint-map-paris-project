@@ -5,8 +5,7 @@ const TemperatureMapScreen = () => {
     <div>
       <iframe
         title="tree-map"
-        width="500"
-        height="400"
+        style={{ width: "100%", height: "80vh" }}
         frameborder="0"
         scrolling="no"
         allowfullscreen
