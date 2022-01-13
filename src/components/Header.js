@@ -5,7 +5,7 @@ import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg">
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand>Green Paris</Navbar.Brand>
@@ -18,6 +18,9 @@ const Header = () => {
             </LinkContainer>
             <LinkContainer to="/emission-map">
               <Nav.Link>Emission Map</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/scientific-background">
+              <Nav.Link>Background</Nav.Link>
             </LinkContainer>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
