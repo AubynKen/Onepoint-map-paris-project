@@ -5,7 +5,8 @@ import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
-import TemperatureScreen from "./screens/TemperatureScreen";
+import TreeSreen from "./screens/TreeScreen";
+import EmissionScreen from "./screens/EmissionScreen";
 
 const App = () => (
   <Router>
@@ -13,7 +14,9 @@ const App = () => (
     <Container style={{ minHeight: "80vh" }}>
       <Routes>
         <Route path="/">
-          <Route path="temp-map" element={<TemperatureScreen />} />
+          <Route path="paris-trees" element={<TreeSreen />} />
+          <Route path="emission-map" element={<EmissionScreen />} />
+          />
         </Route>
       </Routes>
     </Container>

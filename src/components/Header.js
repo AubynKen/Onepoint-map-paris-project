@@ -13,8 +13,8 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <LinkContainer to="/temp-map">
-              <Nav.Link>Temperature Map</Nav.Link>
+            <LinkContainer to="/paris-trees">
+              <Nav.Link>Trees in Paris</Nav.Link>
             </LinkContainer>
             <LinkContainer to="/emission-map">
               <Nav.Link>Emission Map</Nav.Link>
