@@ -16,7 +16,6 @@ const App = () => (
         <Route path="/">
           <Route path="paris-trees" element={<TreeSreen />} />
           <Route path="emission-map" element={<EmissionScreen />} />
-          />
         </Route>
       </Routes>
     </Container>
