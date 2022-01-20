@@ -3,6 +3,12 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 // import { Link } from "react-router-dom";
 
+
+/*
+This components renders the menu/navigation bar on top of the website, for users to navigate between different pages of the website.
+It uses the navbar component of React-Bootstrap.
+*/
+
 const Header = () => {
   return (
     <Navbar expand="lg">

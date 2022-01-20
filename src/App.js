@@ -11,21 +11,32 @@ import WelcomeScreen from "./screens/WelcomeScreen";
 import BackgroundScreen from "./screens/BackgroundScreen";
 import AboutUsScreen from "./screens/AboutUsScreen";
 
-const App = () => (
-  <Router>
-    <Header />
-    <Container style={{ minHeight: "80vh" }}>
-      <Routes>
-        <Route path="/">
-          <Route index element={<WelcomeScreen />} />
-          <Route path="paris-trees" element={<TreeSreen />} />
-          <Route path="emission-map" element={<EmissionScreen />} />
-          <Route path="scientific-background" element={<BackgroundScreen />} />
-          <Route path="about-us" element={<AboutUsScreen />} />
-        </Route>
-      </Routes>
-    </Container>
-    <Footer />
-  </Router>
-);
+const App = () => {
+
+  // Set English as the default language for the website
+  if (localStorage.getItem("lang") === null) {
+    localStorage.setItem("lang", "EN");
+  }
+
+  return (
+    <Router>
+      <Header />
+      <Container style={{ minHeight: "80vh" }}>
+        <Routes>
+          <Route path="/">
+            <Route index element={<WelcomeScreen />} />
+            <Route path="paris-trees" element={<TreeSreen />} />
+            <Route path="emission-map" element={<EmissionScreen />} />
+            <Route
+              path="scientific-background"
+              element={<BackgroundScreen />}
+            />
+            <Route path="about-us" element={<AboutUsScreen />} />
+          </Route>
+        </Routes>
+      </Container>
+      <Footer />
+    </Router>
+  );
+};
 export default App;
