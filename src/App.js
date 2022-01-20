@@ -9,6 +9,7 @@ import TreeSreen from "./screens/TreeScreen";
 import EmissionScreen from "./screens/EmissionScreen";
 import WelcomeScreen from "./screens/WelcomeScreen";
 import BackgroundScreen from "./screens/BackgroundScreen";
+import AboutUsScreen from "./screens/AboutUsScreen";
 
 const App = () => (
   <Router>
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="paris-trees" element={<TreeSreen />} />
           <Route path="emission-map" element={<EmissionScreen />} />
           <Route path="scientific-background" element={<BackgroundScreen />} />
+          <Route path="about-us" element={<AboutUsScreen />} />
         </Route>
       </Routes>
     </Container>

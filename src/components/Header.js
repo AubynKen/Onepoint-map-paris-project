@@ -22,6 +22,9 @@ const Header = () => {
             <LinkContainer to="/scientific-background">
               <Nav.Link>Background</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/about-us">
+              <Nav.Link>About Us</Nav.Link>
+            </LinkContainer>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
